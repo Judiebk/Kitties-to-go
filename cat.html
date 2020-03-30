@@ -7,9 +7,10 @@
     font-size:70%;
     }
     #sidebar{
-      height:300px;
+      height:850px;
       width:25%;right:0%;
       float: right;
+
       }
     h5{
       color: rgb(86,195,233)
@@ -28,7 +29,7 @@
       float:left;
       margin-left:10%;
       width:50%;
-      margin-top: 5%;
+      margin-top: 0%;
    }
     .info{
       font-size: 70%;
@@ -37,7 +38,7 @@
       font-size:90%;
       color: rgb(86,195,233);
     }
-    .topnav{
+    #topnav{
       Background-color: gray;
       height: 70px;
       font-size:15px;
@@ -48,15 +49,11 @@
       bottom:0;
       position: absolute;
       width:100%;
+      text-decoration: none;
     }
     article{
       font-size:100%;
       color:rgb(86,195,223);
-    }
-    .clearfix::after{
-      content:"";
-      clear:both;
-      display: block;
     }
     body{
       font-family: sans-serif;
@@ -64,21 +61,35 @@
     p{
       font-size:70%;
     }
+    #footer-container{
+      clear: both;
+      bottom: 0;
+      width: 100%;
+      height: 200px;
+      background-color: black;
+    }
+    footer{
+      color: white;
+      font-size: 60%;
+      text-align: center;
+    }
     </style>
+
     <title>Kitties to go</title>
   </head>
   <body>
     <header>
       <p class="a">KITTIES TO GO!</p>
       <p class="b">Seattle's premiere drive-thru cat rentals.</p>
-    <div class="topnav">
-      <a class="about">About/</a>
-      <a href="#rates">Rates/</a>
-      <a href="#Liability">Liability/</a>
-      <a href="#Kitty">Kitty Profiles/</a>
-      <a href="#Book">Book a Cat/</a>
+    <div id="topnav">
+      <a class="about">About  /</a>
+      <a href="#rates">Rates  /</a>
+      <a href="#Liability">Liability  /</a>
+      <a href="#Kitty">Kitty Profiles  /</a>
+      <a href="#Book">Book a Cat  /</a>
+    </div>
     </header>
-    <div id="sidebar" class="clearfix">
+    <div id="sidebar">
       <h3>Cats in the News</h3>
       <p> Chew ipad cord, why must they do that, grab pompom put it in their water dish.</p>
       <h5>Find out more>></h5>
@@ -111,7 +122,11 @@
       vacuum cleaner and always hungry for lie on your belly and purr when you are asleep stretch.
       </p>
     </section>
-    <footer>footer</footer>
-
+    <footer id="footer-container">
+    <div class="footer">
+    <p>A bunch of words from people that like cats and this is the whole website.</p>
+    <p>@2020 Copywright Kitties to Go  | Seattle, WA </p>
+    </div>
+  </footer>
     </body>
 </html>
